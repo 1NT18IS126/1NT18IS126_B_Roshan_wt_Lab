@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 550px;
+        background: white;
+        border-radius: 10px;
+        border-style: solid;
+        padding: 0 40px;
+      }
+
+      .center h1 {
+        text-align: center;
+        padding: 0 0 20px 0;
+        border-bottom: 1px solid silver;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Number Of Traffic Signals</h1>
+      <label>Source </label>
+      <input type="text" id="from" />
+      &emsp;
+      <label>Destination </label>
+      <input type="text" id="to" />
+      <br /><br />
+      <label>No of Signals between them</label>
+      <input type="text" id="signal" />
+      <br /><br />
+      <button onclick="sub()">Submit</button>&emsp;
+      <button onclick="display()">Status</button>&emsp;
+      <input type="button" value="Refresh" onclick="history.go(0)" />
+      <div id="output"></div>
+      <pre id="out"></pre>
+    </div>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
+</html>
